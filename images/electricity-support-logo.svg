@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title desc">
+  <title id="title">電気サポート窓口 シンボル</title>
+  <desc id="desc">電気の流れと支援を表す赤いシンボルマーク</desc>
+  <rect x="1" y="1" width="46" height="46" rx="10" fill="#fff" stroke="#d9363e" stroke-width="2"/>
+  <path d="M13 16.5h13.5l-4.8 7H35L21.5 36l3.6-9H13z" fill="#d9363e"/>
+  <path d="M13 12h22" fill="none" stroke="#292929" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="13" cy="12" r="2.4" fill="#d9363e"/>
+  <circle cx="35" cy="12" r="2.4" fill="#d9363e"/>
+</svg>
