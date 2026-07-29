@@ -329,7 +329,8 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-lp .faq summary{font-size:15px}
   .night-lp .faq details p{font-size:14px}
   .night-lp .section-title p{font-size:14px}
-  .night-lp .sticky-cta b{font-size:14px}
+  .night-lp .sticky-cta small{font-size:12px}
+  .night-lp .sticky-cta b{font-size:16px}
   .night-lp .form-container{width:calc(100% - 28px)}
   .night-lp .contact-preference{margin-bottom:22px;padding:20px 15px}
   .night-lp .contact-preference legend{font-size:16px}
