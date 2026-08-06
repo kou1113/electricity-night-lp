@@ -257,7 +257,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-flow-list h3{font-size:17px}
 .night-flow-list p{font-size:12px}
 .night-form-section{background:#fff}
-.night-form-section .section-title{text-align:left}
+.night-form-section .section-title{text-align:center}
 .night-form-section .section-title h2{color:#292929}
 .night-form-section .section-title p{margin:0;color:#555}
 @media(max-width:760px){
