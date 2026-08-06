@@ -483,7 +483,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .night-inquiry-cta strong{font-size:16px;line-height:1.5}
 .night-lp .night-sticky{height:82px;display:flex;background:#fff;box-shadow:0 -3px 14px rgba(0,0,0,.16)}
 .night-lp .night-sticky a{display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.3;text-align:center}
-.night-lp .night-sticky .night-sticky-primary{width:62%;background:#bd1234!important}
+.night-lp .night-sticky .night-sticky-primary{width:100%;background:#bd1234!important}
 .night-lp .night-sticky .night-sticky-inquiry{width:38%;height:100%;padding:0;background:#626b78!important;border:0;font:inherit;cursor:pointer}
 .night-lp .night-sticky .night-sticky-inquiry b{font-size:13px}
 .night-lp .cancel-modal-card{width:min(680px,100%)}
