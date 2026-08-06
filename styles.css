@@ -495,6 +495,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .power-company-grid a:focus-visible{outline:3px solid #bd1234;outline-offset:2px}
 .night-lp .power-company-note{margin:14px 0 0;color:#666;font-size:12px;text-align:center}
 .night-lp .night-form-section .section-title,.night-lp .night-form-section .section-title h2,.night-lp .night-form-section .section-title p{width:100%;text-align:center}
+.night-lp .procedure-image::after{display:none}
 @media(min-width:761px){
   .night-lp{padding-bottom:0}
   .night-lp .night-sticky{display:none}
