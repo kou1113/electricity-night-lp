@@ -280,6 +280,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 /* Larger supporting text for senior-friendly readability */
 .night-lp .preview-bar{font-size:12px}
 .night-lp .notice-bar{font-size:11px;line-height:1.65}
+.night-lp .notice-bar span{display:block;white-space:nowrap}
 .night-lp .service-labels span{font-size:15px}
 .night-lp .night-hero-lead{font-size:17px}
 .night-lp .night-response-card strong{font-size:19px}
@@ -425,6 +426,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   font-weight:700;
   line-height:1.6;
 }
+.night-lp .night-hero-followup span{display:block;white-space:nowrap}
 .night-lp .night-hero-caution{
   margin:0;
   color:#333;
@@ -511,7 +513,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-lp .night-hero h1{margin-bottom:17px;font-size:clamp(27px,8vw,33px)}
   .night-lp .night-hero-lead{margin-bottom:22px;font-size:18px}
   .night-lp .night-hero-notice{margin-bottom:22px;padding:22px 20px;border-left-width:7px}
-  .night-lp .night-hero-followup{font-size:18px}
+  .night-lp .night-hero-followup{font-size:clamp(15px,4.5vw,18px);letter-spacing:-.03em}
   .night-lp .night-hero-caution{font-size:13px}
   .night-lp .night-primary-cta{width:100%}
   .night-lp .night-coverage{padding:32px 0}
