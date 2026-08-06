@@ -1,13 +1,25 @@
 <!doctype html>
 <html lang="ja">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKZRZDS');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="icon" href="/favicon.png" type="image/png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="夜間に電気が止まってお困りの方へ。24時間WEBで受け付け、10:00〜19:00に担当スタッフから確認のお電話を差し上げます。">
-  <title>深夜の電気再開｜24時間WEB受付窓口</title>
-  <link rel="stylesheet" href="styles.css?v=20260729-mobile-sticky-text-1">
+  <meta name="description" content="電気の引越し・開始・再開を24時間WEBで受け付け、10:00〜19:00に担当スタッフから確認のお電話を差し上げます。">
+  <title>電気の開通窓口｜24時間WEB受付</title>
+  <link rel="stylesheet" href="styles.css?v=20260806-inquiry-modal-5">
 </head>
 <body class="night-lp">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKZRZDS"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div class="preview-bar">社内確認用プレビュー</div>
   <div class="notice-bar">当窓口は、電気の契約を取り次ぐ民間の受付窓口です。電力会社の公式窓口ではありません。</div>
 
@@ -15,10 +27,17 @@
     <section class="hero night-hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <h1>電気が止まってしまった方へ</h1>
-          <h2>電気の再開を<br class="mobile-break">WEBで受け付けています</h2>
-          <p class="night-hero-lead">受付後、10:00〜19:00に担当スタッフからご連絡します。</p>
-          <a class="night-primary-cta" href="#form"><strong>WEBで再開を申し込む</strong><small>24時間受付・入力約1分</small></a>
+          <h2>時間外WEB受付</h2>
+          <h1>電気開始・再開手続き</h1>
+          <p class="night-hero-lead">電気の引越し・開始・再開WEB受付</p>
+          <div class="night-hero-notice">
+            <p class="night-hero-followup">受付後、10:00〜19:00に担当スタッフから折り返します。</p>
+            <p class="night-hero-caution">※WEB受付のみでは手続きは完了しませんのでご注意ください。</p>
+          </div>
+          <div class="night-hero-actions">
+            <a class="night-primary-cta" href="#form"><strong>電気の引越し 開始・再開予約</strong><small>24時間受付・入力約1分</small></a>
+            <button class="night-inquiry-cta modal-open" type="button"><strong>停電、その他問い合わせ</strong></button>
+          </div>
         </div>
       </div>
     </section>
@@ -33,11 +52,11 @@
 
     <section class="night-flow" id="procedure">
       <div class="container">
-        <div class="night-section-heading"><h2>受付後の流れ</h2></div>
+        <div class="night-section-heading"><h2>電気利用開始までの流れ</h2></div>
         <ol class="night-flow-list">
-          <li><span>1</span><div><h3>WEBから申し込む</h3><p>必要事項を入力して送信します。</p></div></li>
-          <li><span>2</span><div><h3>担当スタッフから確認の電話</h3><p>10:00〜19:00に申し込み内容を確認します。</p></div></li>
-          <li><span>3</span><div><h3>再開手続きを進める</h3><p>契約状況に応じて手続きを進めます。</p><p class="procedure-note">※設備や契約の状況により、再開まで時間がかかる場合があります。</p></div></li>
+          <li><span>1</span><div><h3>時間外WEB受付</h3><p>電気を利用する住所やご希望の内容など、必要事項を入力して送信します。</p></div></li>
+          <li><span>2</span><div><h3>担当スタッフからご連絡</h3><p>10:00〜19:00に、ご希望の内容や利用先の状況を確認します。</p></div></li>
+          <li><span>3</span><div><h3>電気の利用開始手続き</h3><p>確認した内容に沿って、電気を利用するための手続きを進めます。</p><p class="procedure-note">※お申し込み内容や設備状況によっては、当日の開通が可能です。</p></div></li>
         </ol>
       </div>
     </section>
@@ -45,17 +64,18 @@
     <section class="section faq" id="faq">
       <div class="container narrow">
         <div class="section-title"><h2>よくあるご質問</h2></div>
-        <details open><summary>住所がすべてわからなくても申し込めますか？</summary><p>はい。住所はわかる範囲で入力してください。お名前・ふりがな・電話番号でお申し込みいただけます。</p></details>
-        <details><summary>確認の電話に出られなかった場合は？</summary><p>担当スタッフから改めてご連絡します。着信に気づいた際は、次の連絡をお待ちください。</p></details>
-        <details><summary>近所の建物や街灯も消えている場合は？</summary><p>地域停電の可能性があります。お住まいの地域の電力会社が案内する停電情報をご確認ください。</p></details>
+        <details open><summary>最短でいつから電気を利用できますか？</summary><p>お申し込み内容や設備状況によっては、当日の開通が可能です。受付後、担当スタッフからご連絡し、利用開始の見込みをご案内します。</p></details>
+        <details><summary>深夜にフォームを送った場合、いつ連絡が来ますか？</summary><p>10:00〜19:00に担当スタッフからご連絡します。ご希望の曜日・時間帯はフォームから選択できます。</p></details>
+        <details><summary>WEBフォームを送るだけで手続きは完了しますか？</summary><p>いいえ。WEB受付後、担当スタッフからの確認電話をもって手続きを進めます。連絡が取れる電話番号をご入力ください。</p></details>
+        <details><summary>住所がすべてわからなくても送信できますか？</summary><p>はい。住所はわかる範囲で入力してください。お名前・ふりがな・電話番号は必須です。</p></details>
       </div>
     </section>
 
     <section class="section form-section night-form-section" id="form">
       <div class="container form-container">
-        <div class="section-title inverse"><h2>WEBで電気の再開を申し込む</h2><p>受付後、担当スタッフからご連絡します。</p></div>
+        <div class="section-title inverse"><h2>WEBで電気の引越し・開始・再開を予約</h2><p>受付後、担当スタッフからご連絡します。</p></div>
         <form id="contact-form" class="contact-form" action="#" method="post" accept-charset="UTF-8">
-          <input type="hidden" name="situation" value="深夜帯・電気の再開">
+          <input type="hidden" name="situation" value="時間外・電気の引越し・開始・再開予約">
           <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot">
           <p class="form-status-note">担当スタッフからの確認電話をもって手続きを進めます。</p>
           <fieldset class="contact-preference">
@@ -76,7 +96,7 @@
           <label><span>マンション・建物名 <i class="optional">任意</i></span><input name="building" type="text" autocomplete="address-line2" placeholder="例）○○マンション"></label>
           <label><span>号室 <i class="optional">任意</i></span><input name="room" type="text" autocomplete="address-line3" placeholder="例）101号室"></label>
           <label class="privacy"><input type="checkbox" name="privacy_agreement" value="1" required><span><a href="privacy.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>とサービス案内に同意する</span></label>
-          <button type="submit"><small>24時間WEB受付</small>電気の再開を申し込む</button>
+          <button type="submit"><small>24時間WEB受付</small>電気の引越し 開始・再開予約</button>
         </form>
       </div>
     </section>
@@ -85,7 +105,18 @@
   </main>
 
   <footer><p>Copyright © 株式会社ライフクリエーションホールディングス All Rights Reserved.</p></footer>
-  <div class="sticky-cta night-sticky"><a href="#form"><small>24時間受付</small><b>WEBで電気の再開を申し込む</b></a></div>
-  <script src="script.js?v=20260729-github-preview-1"></script>
+  <div class="sticky-cta night-sticky"><a class="night-sticky-primary" href="#form"><small>24時間受付</small><b>電気の引越し<br>開始・再開予約</b></a><button class="night-sticky-inquiry modal-open" type="button"><b>停電、その他<br>問い合わせ</b></button></div>
+  <div class="cancel-modal" id="cancel-guide" role="dialog" aria-modal="true" aria-labelledby="cancel-guide-title" aria-hidden="true">
+    <div class="cancel-modal-backdrop" data-modal-close></div>
+    <div class="cancel-modal-card" role="document">
+      <button class="cancel-modal-close" type="button" aria-label="閉じる" data-modal-close>×</button>
+      <span class="cancel-modal-label">停電・その他のお問い合わせ</span>
+      <h2 id="cancel-guide-title">現在契約している電力会社へ<br>ご連絡ください</h2>
+      <p>停電や契約内容などのお問い合わせは、現在ご契約中の電力会社が窓口です。検針票・請求書・電力会社のマイページなどで連絡先をご確認ください。</p>
+      <div class="cancel-modal-note"><b>契約先がわからない場合</b><span>請求メールや、口座振替・クレジットカードの利用明細に記載された会社名をご確認ください。</span></div>
+      <button class="cancel-modal-button" type="button" data-modal-close>内容を確認しました</button>
+    </div>
+  </div>
+  <script src="script.js?v=20260806-cancel-modal-1"></script>
 </body>
 </html>

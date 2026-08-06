@@ -363,32 +363,68 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 /* Short, utility-focused guidance above the specified form */
 .night-lp{font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif}
 .night-lp .night-hero{
-  padding:48px 0 52px;
+  padding:42px 0 52px;
   background:#fff;
   border-bottom:1px solid #e5e5e5;
 }
-.night-lp .night-hero .hero-copy{width:min(760px,100%)}
+.night-lp .night-hero .hero-copy{width:min(900px,100%)}
 .night-lp .night-hero h1{
-  margin:0 0 9px;
-  color:#333;
-  font-size:18px;
-  font-weight:500;
-  line-height:1.6;
-  letter-spacing:.02em;
+  margin:0 0 22px;
+  padding:0;
+  color:#cf002e;
+  font-size:clamp(36px,5.2vw,54px);
+  font-weight:800;
+  line-height:1.35;
+  letter-spacing:.01em;
 }
 .night-lp .night-hero h2{
-  margin:0 0 17px;
-  color:#222;
-  font-size:clamp(30px,4vw,40px);
+  position:relative;
+  width:fit-content;
+  margin:0 0 48px;
+  padding:14px 28px;
+  color:#c82431;
+  border:2px solid #e7bfc2;
+  border-radius:6px;
+  text-align:left;
+  font-size:22px;
   font-weight:700;
-  line-height:1.4;
+  line-height:1.5;
   letter-spacing:0;
+}
+.night-lp .night-hero h2::after{
+  position:absolute;
+  bottom:-36px;
+  left:0;
+  width:min(900px,calc(100vw - 40px));
+  height:4px;
+  background:#d42b34;
+  content:"";
 }
 .night-lp .night-hero-lead{
   max-width:none;
+  margin:0 0 28px;
+  color:#292929;
+  font-size:clamp(22px,3.2vw,34px);
+  font-weight:700;
+  line-height:1.55;
+}
+.night-lp .night-hero-notice{
   margin:0 0 26px;
-  color:#555;
-  font-size:16px;
+  padding:28px 34px;
+  background:#fff7f7;
+  border-left:9px solid #d62f38;
+}
+.night-lp .night-hero-followup{
+  margin:0 0 12px;
+  color:#cf002e;
+  font-size:clamp(20px,3vw,29px);
+  font-weight:700;
+  line-height:1.6;
+}
+.night-lp .night-hero-caution{
+  margin:0;
+  color:#333;
+  font-size:15px;
   line-height:1.8;
 }
 .night-lp .night-primary-cta{
@@ -437,15 +473,32 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .faq details{border-width:1px 0 0;border-radius:0}
 .night-lp .faq details:last-of-type{border-bottom:1px solid var(--line)}
 .mobile-break{display:none}
+.night-lp .night-hero-actions{width:min(700px,100%);display:grid;grid-template-columns:1.35fr .85fr;gap:12px}
+.night-lp .night-hero-actions .night-primary-cta{width:100%;margin:0;background:#bd1234}
+.night-lp .night-inquiry-cta{min-height:70px;padding:12px 16px;display:flex;align-items:center;justify-content:center;color:#fff;background:#626b78;border:0;border-radius:3px;text-align:center;text-decoration:none;font:inherit;cursor:pointer}
+.night-lp .night-inquiry-cta strong{font-size:16px;line-height:1.5}
+.night-lp .night-sticky{height:82px;display:flex;background:#fff;box-shadow:0 -3px 14px rgba(0,0,0,.16)}
+.night-lp .night-sticky a{display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.3;text-align:center}
+.night-lp .night-sticky .night-sticky-primary{width:62%;background:#bd1234!important}
+.night-lp .night-sticky .night-sticky-inquiry{width:38%;height:100%;padding:0;background:#626b78!important;border:0;font:inherit;cursor:pointer}
+.night-lp .night-sticky .night-sticky-inquiry b{font-size:13px}
 @media(min-width:761px){
   .night-lp{padding-bottom:0}
   .night-lp .night-sticky{display:none}
 }
 @media(max-width:760px){
-  .night-lp .night-hero{padding:36px 0 40px}
-  .night-lp .night-hero h1{font-size:15px}
-  .night-lp .night-hero h2{font-size:28px}
-  .night-lp .night-hero-lead{font-size:14px}
+  .night-lp{padding-bottom:82px}
+  .night-lp .night-hero-actions{grid-template-columns:1fr}
+  .night-lp .night-inquiry-cta{min-height:60px}
+  .night-lp .night-hero{padding:28px 0 38px}
+  .night-lp .night-hero h2{margin-bottom:41px;padding:11px 16px;font-size:17px}
+  .night-lp .night-hero h2::after{width:calc(100vw - 28px)}
+  .night-lp .night-hero h2::after{bottom:-30px;height:3px}
+  .night-lp .night-hero h1{margin-bottom:18px;font-size:clamp(29px,9vw,39px)}
+  .night-lp .night-hero-lead{margin-bottom:22px;font-size:20px}
+  .night-lp .night-hero-notice{margin-bottom:22px;padding:22px 20px;border-left-width:7px}
+  .night-lp .night-hero-followup{font-size:21px}
+  .night-lp .night-hero-caution{font-size:13px}
   .night-lp .night-primary-cta{width:100%}
   .night-lp .night-coverage{padding:32px 0}
   .night-lp .night-flow{padding:36px 0}

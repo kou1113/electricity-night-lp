@@ -40,3 +40,34 @@ if (stickyCta) {
   window.addEventListener('scroll', requestStickyCtaUpdate, { passive: true });
   window.addEventListener('resize', requestStickyCtaUpdate);
 }
+
+const cancelModal = document.getElementById('cancel-guide');
+const modalOpenButtons = document.querySelectorAll('.modal-open');
+let lastModalOpenButton = null;
+
+const closeCancelModal = () => {
+  if (!cancelModal) return;
+  cancelModal.classList.remove('is-open');
+  cancelModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-active');
+  lastModalOpenButton?.focus();
+};
+
+modalOpenButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (!cancelModal) return;
+    lastModalOpenButton = button;
+    cancelModal.classList.add('is-open');
+    cancelModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-active');
+    cancelModal.querySelector('.cancel-modal-close')?.focus();
+  });
+});
+
+cancelModal?.querySelectorAll('[data-modal-close]').forEach((button) => {
+  button.addEventListener('click', closeCancelModal);
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && cancelModal?.classList.contains('is-open')) closeCancelModal();
+});
