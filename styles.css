@@ -503,6 +503,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-lp .cancel-modal-card{padding:32px 20px 22px}
   .night-lp .power-company-grid{grid-template-columns:repeat(2,1fr);gap:8px}
   .night-lp .power-company-grid a{min-height:48px;font-size:14px}
+  .night-lp .power-company-grid .power-company-tokyo{order:10;grid-column:1/-1}
   .night-lp .night-hero{padding:28px 0 38px}
   .night-lp .night-hero h2{margin-bottom:41px;padding:10px 15px;font-size:15px}
   .night-lp .night-hero h2::after{width:calc(100vw - 28px)}
