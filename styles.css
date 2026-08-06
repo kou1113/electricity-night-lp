@@ -497,6 +497,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .night-form-section .section-title,.night-lp .night-form-section .section-title h2,.night-lp .night-form-section .section-title p{width:100%;text-align:center}
 .night-lp .procedure-image::after{display:none}
 .night-lp .procedure-cta{grid-template-columns:1fr}
+.night-lp .night-form-section .form-heading-note{width:100%;max-width:none;margin:0 auto!important;display:block;text-align:center!important}
 @media(min-width:761px){
   .night-lp{padding-bottom:0}
   .night-lp .night-sticky{display:none}
