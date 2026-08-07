@@ -444,6 +444,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .night-coverage{padding:38px 0}
 .night-lp .night-flow{padding:42px 0}
 .night-lp .night-section-heading{margin-bottom:22px;text-align:left}
+.night-lp .night-coverage .night-section-heading{text-align:center}
 .night-lp .night-section-heading h2{
   margin:0;
   color:#292929;
@@ -456,9 +457,9 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   background:transparent;
   border-top:1px solid #ddd;
   border-bottom:1px solid #ddd;
-  text-align:left;
+  text-align:center;
 }
-.night-lp .coverage-note{text-align:left}
+.night-lp .coverage-note{text-align:center}
 .night-lp .night-flow-list{gap:0}
 .night-lp .night-flow-list li{
   padding:20px 0;
@@ -525,4 +526,21 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-lp .night-section-heading h2{font-size:21px}
   .night-lp .faq{padding:40px 0}
   .mobile-break{display:block}
+}
+
+/* Free-entry remarks field */
+.night-lp .contact-form textarea{
+  width:100%;
+  padding:12px;
+  border:1px solid #bdcbd4;
+  border-radius:4px;
+  background:#fff;
+  font:inherit;
+  font-size:16px;
+  line-height:1.6;
+  resize:vertical;
+}
+.night-lp .contact-form textarea:focus{
+  outline:3px solid rgba(214,45,47,.14);
+  border-color:var(--ref-red);
 }

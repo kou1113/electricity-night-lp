@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="ja">
 <head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -13,7 +16,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="電気の引越し・開始・再開を24時間WEBで受け付け、10:00〜19:00に担当スタッフから確認のお電話を差し上げます。">
   <title>電気の開通窓口｜24時間WEB受付</title>
-  <link rel="stylesheet" href="styles.css?v=20260806-form-note-center-17">
+  <link rel="stylesheet" href="styles.css?v=20260807-remarks-20">
 </head>
 <body class="night-lp">
   <!-- Google Tag Manager (noscript) -->
@@ -99,6 +102,7 @@
               <label><span>希望時間帯</span><select name="preferred_time" required><option value="指定なし">指定なし</option><option value="10:00-12:00">10:00-12:00</option><option value="12:00-15:00">12:00 - 15:00</option><option value="15:00-18:00">15:00 - 18:00</option><option value="18:00以降">18:00以降</option></select></label>
             </div>
           </fieldset>
+          <label><span>希望サービス <i>必須</i></span><select name="preferred_service" required><option value="" selected disabled>選択してください</option><option value="電気(新規・引越し)">電気(新規・引越し)</option><option value="電気(再開)">電気(再開)</option><option value="電気・ガス">電気・ガス</option></select></label>
           <label><span>お名前 <i>必須</i></span><input name="name" type="text" required autocomplete="name" placeholder="例）山田 太郎"></label>
           <label><span>ふりがな <i>必須</i></span><input name="name_kana" type="text" required placeholder="例）やまだ たろう"></label>
           <label><span>電話番号 <i>必須</i></span><input name="tel" type="tel" required autocomplete="tel" inputmode="tel" placeholder="例）09012345678"></label>
@@ -108,6 +112,7 @@
           <label><span>住所 <i class="optional">任意</i></span><input name="address" type="text" autocomplete="address-line1" placeholder="例）○○県○○市○○町1-2-3"></label>
           <label><span>マンション・建物名 <i class="optional">任意</i></span><input name="building" type="text" autocomplete="address-line2" placeholder="例）○○マンション"></label>
           <label><span>号室 <i class="optional">任意</i></span><input name="room" type="text" autocomplete="address-line3" placeholder="例）101号室"></label>
+          <label><span>備考 <i class="optional">任意</i></span><textarea name="remarks" rows="5" placeholder="ご要望や連絡事項などをご自由にご記入ください"></textarea></label>
           <label class="privacy"><input type="checkbox" name="privacy_agreement" value="1" required><span><a href="privacy.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>とサービス案内に同意する</span></label>
           <button type="submit"><small>24時間WEB受付</small>電気の引越し 開始・再開予約</button>
         </form>
@@ -140,6 +145,6 @@
       <button class="cancel-modal-button" type="button" data-modal-close>閉じる</button>
     </div>
   </div>
-  <script src="script.js?v=20260806-cancel-modal-1"></script>
+  <script src="script.js?v=20260807-github-preview-2"></script>
 </body>
 </html>
