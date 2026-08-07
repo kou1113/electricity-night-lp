@@ -544,3 +544,10 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   outline:3px solid rgba(214,45,47,.14);
   border-color:var(--ref-red);
 }
+
+@media(max-width:760px){
+  .night-lp{padding-bottom:88px}
+  .night-lp .night-sticky{height:88px}
+  .night-lp .night-sticky small{font-size:13px;line-height:1.35}
+  .night-lp .night-sticky b{font-size:18px;line-height:1.4}
+}
