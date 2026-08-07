@@ -549,5 +549,5 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-lp{padding-bottom:88px}
   .night-lp .night-sticky{height:88px}
   .night-lp .night-sticky small{font-size:13px;line-height:1.35}
-  .night-lp .night-sticky b{font-size:18px;line-height:1.4}
+  .night-lp .night-sticky b{font-size:21px;line-height:1.35;letter-spacing:-.04em}
 }
