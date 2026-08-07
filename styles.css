@@ -548,34 +548,33 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 @media(max-width:760px){
   .night-lp{padding-bottom:96px}
   .night-lp .night-sticky{
-    height:96px;
-    padding:8px 10px 10px;
-    background:rgba(255,255,255,.97);
-    border-top:1px solid #eadede;
-    box-shadow:0 -4px 18px rgba(40,20,22,.16);
+    height:92px;
+    padding:9px 12px 11px;
+    background:#fff;
+    border-top:1px solid #ddd;
+    box-shadow:0 -2px 8px rgba(0,0,0,.12);
   }
   .night-lp .night-sticky .night-sticky-primary{
     position:relative;
-    height:76px;
-    padding:8px 42px 8px 18px;
-    border:1px solid #a60f2b!important;
-    border-radius:9px;
-    box-shadow:0 5px 0 #8f1026,0 7px 15px rgba(120,15,35,.28);
-    transition:transform .15s ease,box-shadow .15s ease;
+    height:72px;
+    padding:8px 38px 8px 16px;
+    border:0!important;
+    border-radius:5px;
+    box-shadow:0 2px 5px rgba(80,0,15,.24);
+    transition:opacity .15s ease;
   }
   .night-lp .night-sticky .night-sticky-primary::after{
     content:"›";
     position:absolute;
-    right:18px;
+    right:16px;
     top:50%;
-    font-size:31px;
-    font-weight:500;
+    font-size:24px;
+    font-weight:400;
     line-height:1;
-    transform:translateY(-53%);
+    transform:translateY(-52%);
   }
   .night-lp .night-sticky .night-sticky-primary:active{
-    transform:translateY(4px);
-    box-shadow:0 1px 0 #8f1026,0 3px 8px rgba(120,15,35,.24);
+    opacity:.82;
   }
   .night-lp .night-sticky small{font-size:13px;line-height:1.35}
   .night-lp .night-sticky b{font-size:17px;font-weight:900;line-height:1.35;letter-spacing:-.02em}
