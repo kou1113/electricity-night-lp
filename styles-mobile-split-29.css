@@ -95,9 +95,9 @@ body{padding-bottom:72px;color:#292929;background:#fff;line-height:1.7}.site-hea
 @media(max-width:760px){.procedure-copy{padding-top:0}.procedure-copy h3{font-size:16px}.procedure-copy li{font-size:11px}.procedure-list>li:first-child .procedure-image{height:260px}}
 
 /* Photographic procedure assets */
-.procedure-image-phone{background-image:url('images/procedure-step1-smartphone.webp');background-position:center}
-.procedure-image-guide{background-image:url('images/procedure-step2-support.webp');background-position:center}
-.procedure-image-complete{background-image:url('images/procedure-step3-power-on.webp');background-position:center}
+.procedure-image-phone{background-image:url('images/procedure-step1-smartphone.jpg');background-position:center}
+.procedure-image-guide{background-image:url('images/procedure-step2-support.jpg');background-position:center}
+.procedure-image-complete{background-image:url('images/procedure-step3-power-on.jpg');background-position:center}
 
 /* Distinguish the fixed WEB action from the phone action */
 .sticky-cta a:last-child{color:var(--ref-red);background:#fff;border-left:1px solid #e7caca}
