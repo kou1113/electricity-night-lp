@@ -279,8 +279,8 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 
 /* Larger supporting text for senior-friendly readability */
 .night-lp .preview-bar{font-size:12px}
-.night-lp .notice-bar{font-size:11px;line-height:1.65}
-.night-lp .notice-bar span{display:block;white-space:nowrap}
+.night-lp .notice-bar{padding:7px 15px;font-size:9px;line-height:1.55}
+.night-lp .notice-bar span{display:block;white-space:normal}
 .night-lp .service-labels span{font-size:15px}
 .night-lp .night-hero-lead{font-size:17px}
 .night-lp .night-response-card strong{font-size:19px}
@@ -319,7 +319,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .preference-grid select:focus{border-color:var(--ref-red)}
 @media(max-width:760px){
   .night-lp .preview-bar{font-size:11px}
-  .night-lp .notice-bar{font-size:10px}
+  .night-lp .notice-bar{padding:6px 12px;font-size:8px}
   .night-lp .service-labels span{font-size:13px}
   .night-lp .night-hero-lead{font-size:15px}
   .night-lp .night-response-card p{font-size:14px}
