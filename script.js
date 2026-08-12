@@ -24,7 +24,7 @@ if (earliestStartDate) {
         .filter(({ type }) => type !== 'literal')
         .map(({ type, value }) => [type, Number(value)])
     );
-    const daysToAdd = parts.hour >= 17 ? 1 : 0;
+    const daysToAdd = parts.hour >= 18 ? 1 : 0;
     const startDate = new Date(Date.UTC(parts.year, parts.month - 1, parts.day + daysToAdd));
 
     earliestStartDate.dateTime = startDate.toISOString().slice(0, 10);
