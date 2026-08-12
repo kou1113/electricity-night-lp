@@ -86,7 +86,7 @@ body{padding-bottom:72px;color:#292929;background:#fff;line-height:1.7}.site-hea
 @media(max-width:760px){.hero h1{font-size:25px}}
 
 /* Reference-style procedure flow */
-.procedure-flow{padding:0 0 52px}.procedure-shell{padding:30px 46px 38px;background:var(--ref-pink)}.procedure-shell>h2{position:relative;margin:0 0 22px;padding-bottom:13px;border-bottom:1px solid #e6cfd0;text-align:center;font-size:22px}.procedure-shell>h2::after{content:"";position:absolute;bottom:-1px;left:0;width:155px;height:1px;background:var(--ref-red)}.procedure-list{width:min(900px,100%);margin:auto;padding:0;list-style:none}.procedure-list li{margin-bottom:24px;display:grid;grid-template-columns:400px 1fr;gap:34px;align-items:center}.procedure-image{position:relative;height:265px;overflow:hidden;background-color:#ddd;background-position:center;background-size:cover}.procedure-image::after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(255,255,255,.88))}.procedure-image span{position:absolute;z-index:2;top:0;left:0;padding:5px 11px;color:#fff;background:var(--ref-red);font-family:Georgia,serif;font-size:24px}.procedure-image strong{position:absolute;z-index:2;bottom:14px;left:16px;color:var(--ref-red);font-size:22px;line-height:1.25;text-shadow:0 1px #fff}.procedure-image-phone{background-image:url('images/procedure-step1-smartphone.jpg');background-position:68% center}.procedure-image-guide{background-image:url('images/procedure-step2-support.jpg');background-position:75% center}.procedure-image-complete{background-image:url('images/procedure-step3-power-on.jpg');background-position:center}.procedure-copy p{margin:0;font-size:13px}.procedure-copy a{width:min(290px,100%);margin:25px auto 0;padding:12px;display:flex;flex-direction:column;align-items:center;color:#fff;background:var(--ref-red);border-radius:3px;text-decoration:none}.procedure-copy a b{font-size:14px}.procedure-copy a small{font-size:9px}.procedure-cta{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:22px}.procedure-cta a{min-height:74px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;background:var(--ref-red);border-radius:3px;text-decoration:none}.procedure-cta small{font-size:10px}.procedure-cta b{font-size:18px}
+.procedure-flow{padding:0 0 52px}.procedure-shell{padding:30px 46px 38px;background:var(--ref-pink)}.procedure-shell>h2{position:relative;margin:0 0 22px;padding-bottom:13px;border-bottom:1px solid #e6cfd0;text-align:center;font-size:22px}.procedure-shell>h2::after{content:"";position:absolute;bottom:-1px;left:0;width:155px;height:1px;background:var(--ref-red)}.procedure-list{width:min(900px,100%);margin:auto;padding:0;list-style:none}.procedure-list li{margin-bottom:24px;display:grid;grid-template-columns:400px 1fr;gap:34px;align-items:center}.procedure-image{position:relative;height:265px;overflow:hidden;background-color:#ddd;background-position:center;background-size:cover}.procedure-image::after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(255,255,255,.88))}.procedure-image span{position:absolute;z-index:2;top:0;left:0;padding:5px 11px;color:#fff;background:var(--ref-red);font-family:Georgia,serif;font-size:24px}.procedure-image strong{position:absolute;z-index:2;bottom:14px;left:16px;color:var(--ref-red);font-size:22px;line-height:1.25;text-shadow:0 1px #fff}.procedure-image-phone{background-image:url('images/electricity-outage-pop-hero-v2.png');background-position:68% center}.procedure-image-guide{background-image:url('images/electricity-outage-support-hero.png');background-position:75% center}.procedure-image-complete{background-image:url('images/electricity-support-editorial-hero.svg');background-position:center}.procedure-copy p{margin:0;font-size:13px}.procedure-copy a{width:min(290px,100%);margin:25px auto 0;padding:12px;display:flex;flex-direction:column;align-items:center;color:#fff;background:var(--ref-red);border-radius:3px;text-decoration:none}.procedure-copy a b{font-size:14px}.procedure-copy a small{font-size:9px}.procedure-cta{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:22px}.procedure-cta a{min-height:74px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;background:var(--ref-red);border-radius:3px;text-decoration:none}.procedure-cta small{font-size:10px}.procedure-cta b{font-size:18px}
 @media(max-width:760px){.procedure-shell{padding:26px 16px}.procedure-shell>h2{font-size:20px}.procedure-list li{grid-template-columns:1fr;gap:16px;margin-bottom:30px}.procedure-image{height:230px}.procedure-image span{font-size:20px}.procedure-image strong{font-size:20px}.procedure-copy p{font-size:12px}.procedure-cta{grid-template-columns:1fr;gap:7px}.procedure-cta a{min-height:68px}}
 
 .hero-actions>.start-button,.hero-actions>.web-button,.hero-actions>.utility-button{min-height:86px}
@@ -295,14 +295,6 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .faq details p{font-size:15px;line-height:1.8}
 .night-lp .section-title p{font-size:15px}
 .night-lp .form-status-note{font-size:14px}
-.night-lp .earliest-start{margin:0 0 22px;padding:20px 24px;text-align:center;color:#292929;background:#fff7dc;border:2px solid #e5bd32;border-radius:8px;box-shadow:0 8px 22px rgba(107,80,0,.09)}
-.night-lp .earliest-start span,.night-lp .earliest-start small{display:block}
-.night-lp .earliest-start span{font-size:14px;font-weight:800}
-.night-lp .earliest-start strong{display:block;margin:3px 0;color:#b52529;font-size:25px;line-height:1.45}
-.night-lp .earliest-start small{color:#655e49;font-size:12px;line-height:1.6}
-.night-lp .earliest-start small+small{margin-top:4px}
-.night-lp .hero-earliest-start{width:min(700px,100%);margin:0 auto 18px;padding:13px 18px;box-shadow:none}
-.night-lp .hero-earliest-start strong{font-size:22px}
 .night-lp .contact-form label>span{font-size:15px}
 .night-lp .contact-form i{font-size:11px}
 .night-lp .contact-form input,.night-lp .contact-form select{font-size:16px}
@@ -338,15 +330,6 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-lp .faq summary{font-size:15px}
   .night-lp .faq details p{font-size:14px}
   .night-lp .section-title p{font-size:14px}
-  .night-lp .earliest-start{margin-bottom:18px;padding:17px 13px}
-  .night-lp .earliest-start span{font-size:13px}
-  .night-lp .earliest-start strong{font-size:20px}
-  .night-lp .earliest-start small{font-size:11px}
-  .night-lp .hero-earliest-start{margin-bottom:15px;padding:16px 15px}
-  .night-lp .hero-earliest-start span{font-size:14px;line-height:1.5}
-  .night-lp .hero-earliest-start strong{margin:4px 0;font-size:23px;line-height:1.4;letter-spacing:-.03em;white-space:nowrap}
-  .night-lp .hero-earliest-start small{font-size:12px;line-height:1.55}
-  .night-lp .hero-earliest-start small+small{margin-top:4px}
   .night-lp .sticky-cta small{font-size:12px}
   .night-lp .sticky-cta b{font-size:16px}
   .night-lp .form-container{width:calc(100% - 28px)}
@@ -522,25 +505,22 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 }
 @media(max-width:760px){
   .night-lp{padding-bottom:82px}
-  .night-lp .night-hero-actions{grid-template-columns:1fr;gap:8px}
-  .night-lp .night-inquiry-cta{min-height:50px;padding:9px 12px}
-  .night-lp .night-inquiry-cta strong{font-size:14px}
+  .night-lp .night-hero-actions{grid-template-columns:1fr}
+  .night-lp .night-inquiry-cta{min-height:60px}
   .night-lp .cancel-modal-card{padding:32px 20px 22px}
   .night-lp .power-company-grid{grid-template-columns:repeat(2,1fr);gap:8px}
   .night-lp .power-company-grid a{min-height:48px;font-size:14px}
   .night-lp .power-company-grid .power-company-tokyo{order:10;grid-column:1/-1}
-  .night-lp .night-hero{padding:16px 0 20px}
-  .night-lp .night-hero h2{margin-bottom:28px;padding:7px 13px;font-size:14px}
+  .night-lp .night-hero{padding:28px 0 38px}
+  .night-lp .night-hero h2{margin-bottom:41px;padding:10px 15px;font-size:15px}
   .night-lp .night-hero h2::after{width:calc(100vw - 28px)}
-  .night-lp .night-hero h2::after{bottom:-18px;height:2px}
-  .night-lp .night-hero h1{margin-bottom:8px;font-size:clamp(25px,7.5vw,30px)}
-  .night-lp .night-hero-lead{margin-bottom:10px;font-size:15px;line-height:1.45}
-  .night-lp .night-hero-notice{margin-bottom:11px;padding:12px 14px;border-left-width:6px}
-  .night-lp .night-hero-followup{margin-bottom:4px;font-size:16px;line-height:1.4;letter-spacing:-.03em}
-  .night-lp .night-hero-caution{font-size:11px;line-height:1.45}
-  .night-lp .night-primary-cta{width:100%;min-height:56px;padding:9px 12px}
-  .night-lp .night-primary-cta strong{font-size:16px}
-  .night-lp .night-primary-cta small{font-size:11px}
+  .night-lp .night-hero h2::after{bottom:-30px;height:3px}
+  .night-lp .night-hero h1{margin-bottom:17px;font-size:clamp(27px,8vw,33px)}
+  .night-lp .night-hero-lead{margin-bottom:22px;font-size:18px}
+  .night-lp .night-hero-notice{margin-bottom:22px;padding:22px 20px;border-left-width:7px}
+  .night-lp .night-hero-followup{font-size:clamp(15px,4.5vw,18px);letter-spacing:-.03em}
+  .night-lp .night-hero-caution{font-size:13px}
+  .night-lp .night-primary-cta{width:100%}
   .night-lp .night-coverage{padding:32px 0}
   .night-lp .night-flow{padding:36px 0}
   .night-lp .night-section-heading h2{font-size:21px}
