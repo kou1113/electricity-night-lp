@@ -1,5 +1,43 @@
 'use strict';
 
+const earliestStartDate = document.getElementById('earliest-start-date');
+
+if (earliestStartDate) {
+  const tokyoDateTime = new Intl.DateTimeFormat('ja-JP', {
+    timeZone: 'Asia/Tokyo',
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+    hour: 'numeric',
+    hourCycle: 'h23',
+  });
+  const displayDate = new Intl.DateTimeFormat('ja-JP', {
+    timeZone: 'UTC',
+    month: 'long',
+    day: 'numeric',
+    weekday: 'short',
+  });
+
+  const updateEarliestStartDate = () => {
+    const parts = Object.fromEntries(
+      tokyoDateTime.formatToParts(new Date())
+        .filter(({ type }) => type !== 'literal')
+        .map(({ type, value }) => [type, Number(value)])
+    );
+    const daysToAdd = parts.hour >= 17 ? 1 : 0;
+    const startDate = new Date(Date.UTC(parts.year, parts.month - 1, parts.day + daysToAdd));
+
+    earliestStartDate.dateTime = startDate.toISOString().slice(0, 10);
+    earliestStartDate.textContent = `最短${displayDate.format(startDate)}から開始可能です`;
+  };
+
+  updateEarliestStartDate();
+  window.setInterval(updateEarliestStartDate, 60 * 1000);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) updateEarliestStartDate();
+  });
+}
+
 document.getElementById('contact-form')?.addEventListener('submit', (event) => {
   event.preventDefault();
   if (!event.currentTarget.checkValidity()) {
