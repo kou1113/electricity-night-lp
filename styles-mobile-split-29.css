@@ -342,11 +342,11 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-lp .earliest-start span{font-size:13px}
   .night-lp .earliest-start strong{font-size:20px}
   .night-lp .earliest-start small{font-size:11px}
-  .night-lp .hero-earliest-start{margin-bottom:12px;padding:11px 12px}
-  .night-lp .hero-earliest-start span{font-size:12px;line-height:1.4}
-  .night-lp .hero-earliest-start strong{margin:2px 0;font-size:21px;line-height:1.35}
-  .night-lp .hero-earliest-start small{font-size:10px;line-height:1.45}
-  .night-lp .hero-earliest-start small+small{margin-top:2px}
+  .night-lp .hero-earliest-start{margin-bottom:15px;padding:16px 15px}
+  .night-lp .hero-earliest-start span{font-size:14px;line-height:1.5}
+  .night-lp .hero-earliest-start strong{margin:4px 0;font-size:23px;line-height:1.4;letter-spacing:-.03em;white-space:nowrap}
+  .night-lp .hero-earliest-start small{font-size:12px;line-height:1.55}
+  .night-lp .hero-earliest-start small+small{margin-top:4px}
   .night-lp .sticky-cta small{font-size:12px}
   .night-lp .sticky-cta b{font-size:16px}
   .night-lp .form-container{width:calc(100% - 28px)}
