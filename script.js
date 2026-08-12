@@ -15,7 +15,6 @@ if (earliestStartDate) {
     timeZone: 'UTC',
     month: 'long',
     day: 'numeric',
-    weekday: 'short',
   });
 
   const updateEarliestStartDate = () => {
@@ -28,7 +27,7 @@ if (earliestStartDate) {
     const startDate = new Date(Date.UTC(parts.year, parts.month - 1, parts.day + daysToAdd));
 
     earliestStartDate.dateTime = startDate.toISOString().slice(0, 10);
-    earliestStartDate.textContent = `最短${displayDate.format(startDate)}から開始可能です`;
+    earliestStartDate.textContent = `最短開通可能日：${displayDate.format(startDate)}`;
   };
 
   updateEarliestStartDate();
