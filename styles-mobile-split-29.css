@@ -300,6 +300,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .earliest-start span{font-size:14px;font-weight:800}
 .night-lp .earliest-start strong{display:block;margin:3px 0;color:#b52529;font-size:25px;line-height:1.45}
 .night-lp .earliest-start small{color:#655e49;font-size:12px;line-height:1.6}
+.night-lp .earliest-start small+small{margin-top:4px}
 .night-lp .contact-form label>span{font-size:15px}
 .night-lp .contact-form i{font-size:11px}
 .night-lp .contact-form input,.night-lp .contact-form select{font-size:16px}
