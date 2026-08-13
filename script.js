@@ -1,5 +1,46 @@
 'use strict';
 
+const earliestStartDates = document.querySelectorAll('.earliest-start-date');
+
+if (earliestStartDates.length) {
+  const tokyoDateTime = new Intl.DateTimeFormat('ja-JP', {
+    timeZone: 'Asia/Tokyo',
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+    hour: 'numeric',
+    hourCycle: 'h23',
+  });
+  const displayDate = new Intl.DateTimeFormat('ja-JP', {
+    timeZone: 'UTC',
+    month: 'long',
+    day: 'numeric',
+  });
+
+  const updateEarliestStartDate = () => {
+    const parts = Object.fromEntries(
+      tokyoDateTime.formatToParts(new Date())
+        .filter(({ type }) => type !== 'literal')
+        .map(({ type, value }) => [type, Number(value)])
+    );
+    const daysToAdd = parts.hour >= 18 ? 1 : 0;
+    const startDate = new Date(Date.UTC(parts.year, parts.month - 1, parts.day + daysToAdd));
+    const dateTime = startDate.toISOString().slice(0, 10);
+    const label = `最短開通可能日：${displayDate.format(startDate)}`;
+
+    earliestStartDates.forEach((element) => {
+      element.dateTime = dateTime;
+      element.textContent = label;
+    });
+  };
+
+  updateEarliestStartDate();
+  window.setInterval(updateEarliestStartDate, 60 * 1000);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) updateEarliestStartDate();
+  });
+}
+
 document.getElementById('contact-form')?.addEventListener('submit', (event) => {
   event.preventDefault();
   if (!event.currentTarget.checkValidity()) {
