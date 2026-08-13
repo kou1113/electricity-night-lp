@@ -523,22 +523,25 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 }
 @media(max-width:760px){
   .night-lp{padding-bottom:82px}
-  .night-lp .night-hero-actions{grid-template-columns:1fr}
-  .night-lp .night-inquiry-cta{min-height:60px}
+  .night-lp .night-hero-actions{grid-template-columns:1fr;gap:8px}
+  .night-lp .night-inquiry-cta{min-height:50px;padding:9px 12px}
+  .night-lp .night-inquiry-cta strong{font-size:14px}
   .night-lp .cancel-modal-card{padding:32px 20px 22px}
   .night-lp .power-company-grid{grid-template-columns:repeat(2,1fr);gap:8px}
   .night-lp .power-company-grid a{min-height:48px;font-size:14px}
   .night-lp .power-company-grid .power-company-tokyo{order:10;grid-column:1/-1}
-  .night-lp .night-hero{padding:28px 0 38px}
-  .night-lp .night-hero h2{margin-bottom:41px;padding:10px 15px;font-size:15px}
+  .night-lp .night-hero{padding:14px 0 18px}
+  .night-lp .night-hero h2{margin-bottom:24px;padding:6px 12px;font-size:13px}
   .night-lp .night-hero h2::after{width:calc(100vw - 28px)}
-  .night-lp .night-hero h2::after{bottom:-30px;height:3px}
-  .night-lp .night-hero h1{margin-bottom:17px;font-size:clamp(27px,8vw,33px)}
-  .night-lp .night-hero-lead{margin-bottom:22px;font-size:18px}
-  .night-lp .night-hero-notice{margin-bottom:22px;padding:22px 20px;border-left-width:7px}
-  .night-lp .night-hero-followup{font-size:clamp(15px,4.5vw,18px);letter-spacing:-.03em}
-  .night-lp .night-hero-caution{font-size:13px}
-  .night-lp .night-primary-cta{width:100%}
+  .night-lp .night-hero h2::after{bottom:-16px;height:2px}
+  .night-lp .night-hero h1{margin-bottom:6px;font-size:clamp(24px,7.2vw,29px)}
+  .night-lp .night-hero-lead{margin-bottom:8px;font-size:14px;line-height:1.4}
+  .night-lp .night-hero-notice{margin-bottom:8px;padding:10px 12px;border-left-width:5px}
+  .night-lp .night-hero-followup{margin-bottom:3px;font-size:15px;line-height:1.35;letter-spacing:-.03em}
+  .night-lp .night-hero-caution{font-size:10px;line-height:1.4}
+  .night-lp .night-primary-cta{width:100%;min-height:54px;padding:8px 12px}
+  .night-lp .night-primary-cta strong{font-size:16px}
+  .night-lp .night-primary-cta small{font-size:10px}
   .night-lp .night-coverage{padding:32px 0}
   .night-lp .night-flow{padding:36px 0}
   .night-lp .night-section-heading h2{font-size:21px}
