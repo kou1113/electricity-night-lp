@@ -339,11 +339,11 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-lp .faq summary{font-size:15px}
   .night-lp .faq details p{font-size:14px}
   .night-lp .section-title p{font-size:14px}
-  .night-lp .earliest-start{margin-bottom:16px;padding:14px 12px}
+  .night-lp .earliest-start{margin-bottom:18px;padding:16px 13px}
   .night-lp .earliest-start span{font-size:12px}
   .night-lp .earliest-start strong{font-size:19px}
   .night-lp .earliest-start small{font-size:10px;white-space:nowrap}
-  .night-lp .hero-earliest-start{margin-bottom:14px;padding:13px 10px}
+  .night-lp .hero-earliest-start{margin-bottom:16px;padding:15px 11px}
   .night-lp .hero-earliest-start span{font-size:12px;line-height:1.45}
   .night-lp .hero-earliest-start strong{margin:2px 0;font-size:21px;line-height:1.35;letter-spacing:-.03em;white-space:nowrap}
   .night-lp .hero-earliest-start small{font-size:10px;line-height:1.5}
@@ -523,23 +523,23 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 }
 @media(max-width:760px){
   .night-lp{padding-bottom:82px}
-  .night-lp .night-hero-actions{grid-template-columns:1fr;gap:10px}
-  .night-lp .night-inquiry-cta{min-height:56px;padding:10px 14px}
+  .night-lp .night-hero-actions{grid-template-columns:1fr;gap:12px}
+  .night-lp .night-inquiry-cta{min-height:58px;padding:11px 14px}
   .night-lp .night-inquiry-cta strong{font-size:15px}
   .night-lp .cancel-modal-card{padding:32px 20px 22px}
   .night-lp .power-company-grid{grid-template-columns:repeat(2,1fr);gap:8px}
   .night-lp .power-company-grid a{min-height:48px;font-size:14px}
   .night-lp .power-company-grid .power-company-tokyo{order:10;grid-column:1/-1}
-  .night-lp .night-hero{padding:22px 0 28px}
-  .night-lp .night-hero h2{margin-bottom:32px;padding:8px 14px;font-size:14px}
+  .night-lp .night-hero{padding:25px 0 32px}
+  .night-lp .night-hero h2{margin-bottom:34px;padding:9px 15px;font-size:14px}
   .night-lp .night-hero h2::after{width:calc(100vw - 28px)}
   .night-lp .night-hero h2::after{bottom:-22px;height:3px}
-  .night-lp .night-hero h1{margin-bottom:12px;font-size:clamp(26px,7.7vw,31px)}
-  .night-lp .night-hero-lead{margin-bottom:14px;font-size:16px;line-height:1.45}
-  .night-lp .night-hero-notice{margin-bottom:14px;padding:15px 16px;border-left-width:6px}
+  .night-lp .night-hero h1{margin-bottom:14px;font-size:clamp(26px,7.7vw,31px)}
+  .night-lp .night-hero-lead{margin-bottom:16px;font-size:16px;line-height:1.45}
+  .night-lp .night-hero-notice{margin-bottom:16px;padding:17px 16px;border-left-width:6px}
   .night-lp .night-hero-followup{margin-bottom:6px;font-size:clamp(15px,4.2vw,17px);line-height:1.45;letter-spacing:-.03em}
   .night-lp .night-hero-caution{font-size:11px;line-height:1.5}
-  .night-lp .night-primary-cta{width:100%;min-height:62px;padding:10px 14px}
+  .night-lp .night-primary-cta{width:100%;min-height:64px;padding:11px 14px}
   .night-lp .night-primary-cta strong{font-size:17px}
   .night-lp .night-primary-cta small{font-size:11px}
   .night-lp .night-coverage{padding:32px 0}
