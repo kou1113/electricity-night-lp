@@ -339,11 +339,11 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-lp .faq summary{font-size:15px}
   .night-lp .faq details p{font-size:14px}
   .night-lp .section-title p{font-size:14px}
-  .night-lp .earliest-start{margin-bottom:18px;padding:17px 13px}
+  .night-lp .earliest-start{margin-bottom:14px;padding:12px 10px}
   .night-lp .earliest-start span{font-size:13px}
   .night-lp .earliest-start strong{font-size:20px}
-  .night-lp .earliest-start small{font-size:11px}
-  .night-lp .hero-earliest-start{margin-bottom:15px;padding:16px 15px}
+  .night-lp .earliest-start small{font-size:10px;white-space:nowrap}
+  .night-lp .hero-earliest-start{margin-bottom:11px;padding:11px 8px}
   .night-lp .hero-earliest-start span{font-size:14px;line-height:1.5}
   .night-lp .hero-earliest-start strong{margin:4px 0;font-size:23px;line-height:1.4;letter-spacing:-.03em;white-space:nowrap}
   .night-lp .hero-earliest-start small{font-size:12px;line-height:1.55}
