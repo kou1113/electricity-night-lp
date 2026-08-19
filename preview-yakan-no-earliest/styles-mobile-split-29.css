@@ -311,12 +311,11 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   -webkit-appearance:none;
   appearance:none;
   font-size:16px;
-  line-height:1.45;
-  height:48px;
-  min-height:48px;
-  max-height:48px;
+  line-height:normal;
+  height:auto;
+  min-height:0;
+  max-height:none;
   overflow:hidden;
-  font:inherit;
 }
 
 .night-lp .contact-form input[type="date"]::-webkit-calendar-picker-indicator{
