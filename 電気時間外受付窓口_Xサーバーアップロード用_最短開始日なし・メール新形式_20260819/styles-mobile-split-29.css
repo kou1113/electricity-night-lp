@@ -596,19 +596,24 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   display:block;
   box-sizing:border-box;
   background:#fff;
+  border:1px solid #bdcbd4;
+  border-radius:4px;
   padding:12px;
-  appearance:none;
   -webkit-appearance:none;
+  appearance:none;
   font:inherit;
-  line-height:1.4;
-  min-height:0;
+  font-size:16px;
+  line-height:1.45;
+  height:48px;
+  min-height:48px;
+  max-height:48px;
+  overflow:hidden;
 }
 .contact-form input[type="date"]::-webkit-calendar-picker-indicator{
-  opacity:1;
-  margin-right:0;
-  margin-left:auto;
-  padding-inline:0;
-  width:18px;
-  height:18px;
+  width:0;
+  height:0;
+  margin:0;
+  padding:0;
+  opacity:0;
   cursor:pointer;
 }
