@@ -310,11 +310,18 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .contact-form input[type="date"]{
   height:48px;
   min-height:48px;
-  width:100%;
-  max-width:100%;
-  min-width:0;
+  display:block;
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
   line-height:1.45;
   box-sizing:border-box;
+  overflow:hidden;
+}
+
+.night-lp .contact-form > label{
+  min-width:0;
+  overflow:hidden;
 }
 .night-lp .optional-address-heading b{font-size:14px}
 .night-lp .optional-address-heading span{font-size:13px}
