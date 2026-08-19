@@ -307,6 +307,12 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .contact-form label>span{font-size:15px}
 .night-lp .contact-form i{font-size:11px}
 .night-lp .contact-form input,.night-lp .contact-form select{font-size:16px}
+.night-lp .contact-form input[type="date"]{
+  height:48px;
+  min-height:48px;
+  line-height:1.45;
+  box-sizing:border-box;
+}
 .night-lp .optional-address-heading b{font-size:14px}
 .night-lp .optional-address-heading span{font-size:13px}
 .night-lp .privacy span{font-size:13px!important}
