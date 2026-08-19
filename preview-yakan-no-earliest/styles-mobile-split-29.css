@@ -311,9 +311,9 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   -webkit-appearance:none;
   appearance:none;
   font-size:16px;
-  line-height:normal;
+  line-height:1.45;
   height:auto;
-  min-height:0;
+  min-height:48px;
   max-height:none;
   overflow:hidden;
 }
