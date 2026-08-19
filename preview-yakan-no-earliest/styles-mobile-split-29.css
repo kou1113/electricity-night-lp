@@ -299,29 +299,27 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .contact-form i{font-size:11px}
 .night-lp .contact-form input,.night-lp .contact-form select{font-size:16px}
 .night-lp .contact-form input[type="date"]{
-  height:48px;
-  min-height:48px;
-  display:block;
   width:100% !important;
   max-width:100% !important;
   min-width:0 !important;
+  min-height:48px;
+  height:48px;
+  padding:12px;
   line-height:1.45;
+  display:block;
   border:1px solid #bdcbd4;
   border-radius:4px;
-  -webkit-appearance:none;
-  appearance:none;
+  -webkit-appearance:auto;
+  appearance:auto;
   font-size:16px;
-  overflow:hidden;
-  max-height:48px;
   box-sizing:border-box;
+  background-color:#fff;
 }
 
 .night-lp .contact-form input[type="date"]::-webkit-calendar-picker-indicator{
-  width:0;
-  height:0;
-  padding:0;
-  margin:0;
-  opacity:0;
+  width:auto;
+  height:auto;
+  opacity:1;
   cursor:pointer;
 }
 
