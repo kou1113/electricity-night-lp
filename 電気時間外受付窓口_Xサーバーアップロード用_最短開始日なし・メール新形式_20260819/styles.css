@@ -295,15 +295,6 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-lp .faq details p{font-size:15px;line-height:1.8}
 .night-lp .section-title p{font-size:15px}
 .night-lp .form-status-note{font-size:14px}
-.night-lp .earliest-start{margin:0 0 22px;padding:20px 24px;text-align:center;color:#292929;background:#fff7dc;border:2px solid #e5bd32;border-radius:8px;box-shadow:0 8px 22px rgba(107,80,0,.09)}
-.night-lp .earliest-start span,.night-lp .earliest-start small{display:block}
-.night-lp .earliest-start span{font-size:14px;font-weight:800}
-.night-lp .earliest-start strong{display:block;margin:3px 0;color:#b52529;font-size:25px;line-height:1.45}
-.night-lp .earliest-start small{color:#655e49;font-size:12px;line-height:1.6}
-.night-lp .earliest-start small+small{margin-top:4px}
-.night-lp .hero-earliest-start{width:min(700px,100%);margin:0 auto 18px;padding:13px 18px;box-shadow:none}
-.night-lp .hero-earliest-start strong{font-size:22px}
-.night-lp .form-earliest-start{margin-top:18px}
 .night-lp .contact-form label>span{font-size:15px}
 .night-lp .contact-form i{font-size:11px}
 .night-lp .contact-form input,.night-lp .contact-form select{font-size:16px}
@@ -339,15 +330,6 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-lp .faq summary{font-size:15px}
   .night-lp .faq details p{font-size:14px}
   .night-lp .section-title p{font-size:14px}
-  .night-lp .earliest-start{margin-bottom:19px;padding:17px 13px}
-  .night-lp .earliest-start span{font-size:12px}
-  .night-lp .earliest-start strong{font-size:19px}
-  .night-lp .earliest-start small{font-size:10px;white-space:nowrap}
-  .night-lp .hero-earliest-start{margin-bottom:17px;padding:16px 11px}
-  .night-lp .hero-earliest-start span{font-size:12px;line-height:1.45}
-  .night-lp .hero-earliest-start strong{margin:2px 0;font-size:21px;line-height:1.35;letter-spacing:-.03em;white-space:nowrap}
-  .night-lp .hero-earliest-start small{font-size:10px;line-height:1.5}
-  .night-lp .hero-earliest-start small+small{margin-top:4px}
   .night-lp .sticky-cta small{font-size:12px}
   .night-lp .sticky-cta b{font-size:16px}
   .night-lp .form-container{width:calc(100% - 28px)}
@@ -523,25 +505,22 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 }
 @media(max-width:760px){
   .night-lp{padding-bottom:82px}
-  .night-lp .night-hero-actions{grid-template-columns:1fr;gap:13px}
-  .night-lp .night-inquiry-cta{min-height:60px;padding:12px 14px}
-  .night-lp .night-inquiry-cta strong{font-size:15px}
+  .night-lp .night-hero-actions{grid-template-columns:1fr}
+  .night-lp .night-inquiry-cta{min-height:60px}
   .night-lp .cancel-modal-card{padding:32px 20px 22px}
   .night-lp .power-company-grid{grid-template-columns:repeat(2,1fr);gap:8px}
   .night-lp .power-company-grid a{min-height:48px;font-size:14px}
   .night-lp .power-company-grid .power-company-tokyo{order:10;grid-column:1/-1}
-  .night-lp .night-hero{padding:28px 0 35px}
-  .night-lp .night-hero h2{margin-bottom:36px;padding:10px 15px;font-size:14px}
+  .night-lp .night-hero{padding:28px 0 38px}
+  .night-lp .night-hero h2{margin-bottom:41px;padding:10px 15px;font-size:15px}
   .night-lp .night-hero h2::after{width:calc(100vw - 28px)}
-  .night-lp .night-hero h2::after{bottom:-22px;height:3px}
-  .night-lp .night-hero h1{margin-bottom:15px;font-size:clamp(26px,7.7vw,31px)}
-  .night-lp .night-hero-lead{margin-bottom:17px;font-size:16px;line-height:1.45}
-  .night-lp .night-hero-notice{margin-bottom:17px;padding:18px 16px;border-left-width:6px}
-  .night-lp .night-hero-followup{margin-bottom:6px;font-size:clamp(15px,4.2vw,17px);line-height:1.45;letter-spacing:-.03em}
-  .night-lp .night-hero-caution{font-size:11px;line-height:1.5}
-  .night-lp .night-primary-cta{width:100%;min-height:66px;padding:12px 14px}
-  .night-lp .night-primary-cta strong{font-size:17px}
-  .night-lp .night-primary-cta small{font-size:11px}
+  .night-lp .night-hero h2::after{bottom:-30px;height:3px}
+  .night-lp .night-hero h1{margin-bottom:17px;font-size:clamp(27px,8vw,33px)}
+  .night-lp .night-hero-lead{margin-bottom:22px;font-size:18px}
+  .night-lp .night-hero-notice{margin-bottom:22px;padding:22px 20px;border-left-width:7px}
+  .night-lp .night-hero-followup{font-size:clamp(15px,4.5vw,18px);letter-spacing:-.03em}
+  .night-lp .night-hero-caution{font-size:13px}
+  .night-lp .night-primary-cta{width:100%}
   .night-lp .night-coverage{padding:32px 0}
   .night-lp .night-flow{padding:36px 0}
   .night-lp .night-section-heading h2{font-size:21px}
@@ -604,19 +583,5 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   }
   .night-lp .night-sticky-label{width:100%;min-height:24px;display:flex;align-items:center;justify-content:center;color:#9f1830;background:#fff0f2;border-radius:4px;font-size:12px;font-weight:800;line-height:1.2}
   .night-lp .night-sticky small{font-size:13px;line-height:1.35}
-.night-lp .night-sticky b{font-size:17px;font-weight:900;line-height:1.35;letter-spacing:-.02em}
-}
-
-.contact-form input[type="date"]{
-  width:100%;
-  min-width:0;
-  max-width:100%;
-  display:block;
-  box-sizing:border-box;
-  min-height:48px;
-  padding:12px;
-  background:#fff;
-}
-.contact-form input[type="date"]::-webkit-calendar-picker-indicator{
-  padding-inline:6px;
+  .night-lp .night-sticky b{font-size:17px;font-weight:900;line-height:1.35;letter-spacing:-.02em}
 }

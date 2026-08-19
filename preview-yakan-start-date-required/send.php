@@ -91,7 +91,6 @@ $name_kana = post_text('name_kana');
 $tel = preg_replace('/[^0-9+\-\s()]/u', '', post_text('tel')) ?? '';
 $email = filter_var(post_text('email'), FILTER_SANITIZE_EMAIL);
 $postal = post_text('postal');
-$prefecture = post_text('prefecture');
 $start_date = post_text('start_date');
 $address = post_text('address');
 $remarks = post_text('remarks');
@@ -115,16 +114,14 @@ if ($email !== '' && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
     show_error_page('メールアドレスの形式をご確認ください。');
 }
 
-$remaining_address_parts = [];
+$full_address_parts = [];
 if ($postal !== '') {
-    $remaining_address_parts[] = '〒' . $postal;
+    $full_address_parts[] = '〒' . $postal;
 }
-foreach ([$address] as $address_part) {
-    if ($address_part !== '') {
-        $remaining_address_parts[] = $address_part;
-    }
+if ($address !== '') {
+    $full_address_parts[] = $address;
 }
-$remaining_address = $remaining_address_parts !== [] ? implode(' ', $remaining_address_parts) : '未入力';
+$full_address = $full_address_parts !== [] ? implode(' ', $full_address_parts) : '未入力';
 
 $staff_message = implode("\n", [
     '電気時間外受付窓口のLPから申し込みがありました。',
@@ -147,11 +144,8 @@ $staff_message = implode("\n", [
     '【利用開始希望日】',
     $start_date !== '' ? $start_date : '未入力',
     '',
-    '【都道府県】',
-    $prefecture !== '' ? $prefecture : '未入力',
-    '',
-    '【それ以降のご住所】',
-    $remaining_address,
+    '【ご利用場所住所】',
+    $full_address,
     '',
     '【電話番号】',
     $tel,
