@@ -87,6 +87,8 @@ const closeCancelModal = () => {
   lastModalOpenButton?.focus();
 };
 
+const isDateTypeStartDate = startDateInput ? startDateInput.type === 'date' : false;
+
 modalOpenButtons.forEach((button) => {
   button.addEventListener('click', () => {
     if (!cancelModal) return;
@@ -102,15 +104,22 @@ cancelModal?.querySelectorAll('[data-modal-close]').forEach((button) => {
   button.addEventListener('click', closeCancelModal);
 });
 
-const formatStartDateInput = (value) => {
-  const digits = value.replace(/\D/g, '').slice(0, 8);
-  if (digits.length <= 4) return digits;
-  if (digits.length <= 6) return `${digits.slice(0, 4)}/${digits.slice(4)}`;
-  return `${digits.slice(0, 4)}/${digits.slice(4, 6)}/${digits.slice(6)}`;
-};
-
 const validateStartDate = (value) => {
   if (!value) return '利用開始希望日を入力してください。';
+  if (isDateTypeStartDate) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return '利用開始希望日はYYYY-MM-DD形式で入力してください。';
+    const parsedDate = new Date(`${value}T00:00`);
+    if (Number.isNaN(parsedDate.getTime())) return '有効な日付を入力してください。';
+    return '';
+  }
+
+  const formatStartDateInput = (value) => {
+    const digits = value.replace(/\D/g, '').slice(0, 8);
+    if (digits.length <= 4) return digits;
+    if (digits.length <= 6) return `${digits.slice(0, 4)}/${digits.slice(4)}`;
+    return `${digits.slice(0, 4)}/${digits.slice(4, 6)}/${digits.slice(6)}`;
+  };
+
   if (!/^\d{4}\/\d{2}\/\d{2}$/.test(value)) return '利用開始希望日はYYYY/MM/DD形式で入力してください。';
 
   const [yearText, monthText, dayText] = value.split('/');
@@ -139,8 +148,16 @@ const updateStartDateValidity = () => {
 
 if (startDateInput) {
   startDateInput.addEventListener('input', (event) => {
-    const nextValue = formatStartDateInput(event.target.value);
-    event.target.value = nextValue;
+    if (!isDateTypeStartDate) {
+      const formatStartDateInput = (value) => {
+        const digits = value.replace(/\D/g, '').slice(0, 8);
+        if (digits.length <= 4) return digits;
+        if (digits.length <= 6) return `${digits.slice(0, 4)}/${digits.slice(4)}`;
+        return `${digits.slice(0, 4)}/${digits.slice(4, 6)}/${digits.slice(6)}`;
+      };
+
+      event.target.value = formatStartDateInput(event.target.value);
+    }
     updateStartDateValidity();
   });
   startDateInput.addEventListener('blur', updateStartDateValidity);
