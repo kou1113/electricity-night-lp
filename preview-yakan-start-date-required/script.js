@@ -75,6 +75,8 @@ if (stickyCta) {
 
 const cancelModal = document.getElementById('cancel-guide');
 const modalOpenButtons = document.querySelectorAll('.modal-open');
+const contactForm = document.getElementById('contact-form');
+const startDateInput = document.querySelector('.contact-form input[name="start_date"]');
 let lastModalOpenButton = null;
 
 const closeCancelModal = () => {
@@ -99,6 +101,60 @@ modalOpenButtons.forEach((button) => {
 cancelModal?.querySelectorAll('[data-modal-close]').forEach((button) => {
   button.addEventListener('click', closeCancelModal);
 });
+
+const formatStartDateInput = (value) => {
+  const digits = value.replace(/\D/g, '').slice(0, 8);
+  if (digits.length <= 4) return digits;
+  if (digits.length <= 6) return `${digits.slice(0, 4)}/${digits.slice(4)}`;
+  return `${digits.slice(0, 4)}/${digits.slice(4, 6)}/${digits.slice(6)}`;
+};
+
+const validateStartDate = (value) => {
+  if (!value) return '利用開始希望日を入力してください。';
+  if (!/^\d{4}\/\d{2}\/\d{2}$/.test(value)) return '利用開始希望日はYYYY/MM/DD形式で入力してください。';
+
+  const [yearText, monthText, dayText] = value.split('/');
+  const year = Number(yearText);
+  const month = Number(monthText);
+  const day = Number(dayText);
+  const parsedDate = new Date(year, month - 1, day);
+  if (Number.isNaN(parsedDate.getTime())) return '有効な日付を入力してください。';
+  if (
+    parsedDate.getFullYear() !== year
+    || parsedDate.getMonth() !== month - 1
+    || parsedDate.getDate() !== day
+  ) {
+    return '有効な日付を入力してください。';
+  }
+
+  return '';
+};
+
+const updateStartDateValidity = () => {
+  if (!startDateInput) return true;
+  const message = validateStartDate(startDateInput.value);
+  startDateInput.setCustomValidity(message);
+  return !message;
+};
+
+if (startDateInput) {
+  startDateInput.addEventListener('input', (event) => {
+    const nextValue = formatStartDateInput(event.target.value);
+    event.target.value = nextValue;
+    updateStartDateValidity();
+  });
+  startDateInput.addEventListener('blur', updateStartDateValidity);
+}
+
+if (contactForm && startDateInput) {
+  contactForm.addEventListener('submit', (event) => {
+    if (!updateStartDateValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+      startDateInput.reportValidity();
+    }
+  });
+}
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && cancelModal?.classList.contains('is-open')) closeCancelModal();
